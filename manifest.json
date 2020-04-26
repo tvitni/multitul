@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Replece",
+	"description": "Мультитул",
+	"version": "1.2.0",
+	"icons": {"128": "viewavatar.png"},
+	"browser_action": {
+		"default_icon": "viewavatar.png",
+		"default_popup": "index.html"
+	},
+	"permissions": ["activeTab"]
+
+}

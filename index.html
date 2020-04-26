@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="SHORTCUT ICON" href="viewavatar.png" type="image/png">
+    <link href="mystyle.css" rel="stylesheet">
+	<title>Мультитул</title>
+</head>
+<body>
+
+
+
+    <textarea  style="width:100%; height:40px;" type="Tel" name="tel" id="odin" placeholder="Сравнение номеров (A)"></textarea>
+    <div>
+    <textarea style="width:100%;  height:40px;" type="Tel" name="tel2" id="dva" placeholder="Сравнение номеров (B)" ></textarea>
+    </div>
+
+
+
+
+		<h2></h2>
+		<form id="apps" > <!-- Форма --> <!--onsubmit = не дает обновится странице при нажатии на кнопку.-->
+		        <!-- Форма для заполнения -->
+		        <input style="width:100%; height:70px;" type="Tel" name="tel" class="esTap" value="" rows="5" placeholder="Введите телефон * Вводимый номер должен содержать 11 цифр * Обратите внимаение, чтобы не было лишних цифр!" id="valueGo">
+		        <button class="applicationButton" type="submit" id="repleceGo">Replace</button> <!--Кнопка-->
+						<button class="applicationButton" type="buttonTI" id="buttonTy">,</button>
+		        <button class="applicationButton" type="buttonTI" id="buttonTyPlus">{,}</button>
+		        <button class="applicationButtonTU" id="buttonClear">Clear</button><!-- Еще кнопка -->
+		</form>
+		<div id="contentTy"></div>
+		<div id="glavnay">
+		<code class="appCode">var numbersss = [</code>
+		     <div id="content" value=""></div>
+		     <code class="appCode">];
+		for (var i = 0; i < numbersss.length; i++) {
+		 $( "td[role=gridcell]" ).each(function() {
+		  if($( this ).attr( "title" ) == numbersss[i]) {
+		   $(this).closest('tr').find('td').eq(0).find('input').click();
+		   $(this).closest('tr').find('td').eq(0).find('input').attr('checked', true);
+		  }
+		 });
+		}</code>
+		</div>
+
+		      <!-- Подгружаем скрипт -->
+		      <script src="osnova.js"></script>
+		      <script src="script_cop.js"></script>
+					<script src="sravnenie.js"></script>
+		      <!-- Подгружаем скрипт -->
+		  </body>
+</html>
